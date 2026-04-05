@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Zero ao Pix</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.profile img {
+  width: 120px;
+  border-radius: 50%;
+  margin-top: -60px;
+  border: 3px solid #00ff88;
+}
+
+h1 {
+  color: #00ff88;
+}
+
+.box {
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.btn {
+  display: block;
+  background: linear-gradient(90deg,#00ff88,#00cc66);
+  color: #000;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.highlight {
+  color: #00ff88;
+}
+
+.countdown {
+  font-size: 18px;
+  color: red;
+  margin-top: 10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- IMAGEM PRINCIPAL -->
+<div class="hero">
+<img src="https://i.imgur.com/8Km9tLL.png">
+</div>
+
+<!-- SUA FOTO -->
+<div class="profile">
+<img src="https://i.imgur.com/abc123.jpg">
+
+<h1>💸 DO ZERO AO PIX</h1>
+
+<p>Transforme seu celular em uma máquina de fazer dinheiro</p>
+
+<!-- PROVA -->
+<div class="box">
+<p>💰 Pessoas comuns já estão faturando todos os dias</p>
+<p>📲 Método simples e direto</p>
+</div>
+
+<!-- BENEFÍCIOS -->
+<div class="box">
+<p>✔️ Comece do zero</p>
+<p>✔️ Ganhe dinheiro com celular</p>
+<p>✔️ Sem aparecer</p>
+<p>✔️ Revenda e lucre também</p>
+</div>
+
+<h2>De <s>R$97</s> por <span class="highlight">R$27</span></h2>
+
+<div class="countdown" id="timer"></div>
+
+<a href="SEU_LINK_AQUI" class="btn">👉 QUERO COMEÇAR AGORA</a>
+
+<a href="https://wa.me/5564992630300" class="btn">💬 FALAR NO WHATSAPP</a>
+
+<!-- BONUS -->
+<div class="box">
+<p>🎁 Bônus exclusivos:</p>
+<p>📩 Mensagens prontas</p>
+<p>🎬 Ideias de vídeos virais</p>
+<p>📈 Estratégia pra crescer</p>
+</div>
+
+<!-- GARANTIA -->
+<div class="box">
+<p>❗ Não precisa investir alto</p>
+<p>❗ Funciona só com celular</p>
+<p>🔒 Garantia de 7 dias</p>
+</div>
+
+</div>
+
+<script>
+// CONTADOR (URGÊNCIA)
+var tempo = 600;
+var el = document.getElementById("timer");
+
+function atualizar() {
+  var minutos = Math.floor(tempo / 60);
+  var segundos = tempo % 60;
+  el.innerHTML = "⏳ Oferta acaba em: " + minutos + ":" + (segundos < 10 ? "0" : "") + segundos;
+  tempo--;
+  if (tempo >= 0) {
+    setTimeout(atualizar, 1000);
+  } else {
+    el.innerHTML = "🔥 Últimas vagas!";
+  }
+}
+
+atualizar();
+</script>
+
+</body>
+  </html>
